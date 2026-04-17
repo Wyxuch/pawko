@@ -1,3 +1,6 @@
+const video = document.getElementById('hero-video');
+const soundBtn = document.getElementById('sound-btn');
+
 // ---- PASSWORD GATE ----
 // Change this to whatever password you want
 const PASSWORD = 'las2026';
@@ -19,6 +22,12 @@ function unlockSite() {
   const gate = document.getElementById('gate');
   gate.classList.add('gate--out');
   setTimeout(() => gate.remove(), 400);
+
+  if (video) {
+    video.muted = false;
+    video.play();
+    if (soundBtn) soundBtn.textContent = '🔊 DŹWIĘK';
+  }
 }
 
 // Check on load — skip gate if already authenticated this session
@@ -38,9 +47,6 @@ document.getElementById('gate-input')?.addEventListener('keydown', (e) => {
 });
 
 // Video sound toggle
-const video = document.getElementById('hero-video');
-const soundBtn = document.getElementById('sound-btn');
-
 function toggleSound() {
   if (!video) return;
   video.muted = !video.muted;

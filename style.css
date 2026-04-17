@@ -180,7 +180,7 @@ body {
 .hero {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background: #000;
 }
@@ -207,7 +207,7 @@ body {
 
 .sound-btn {
   position: absolute;
-  bottom: 28px;
+  bottom: calc(28px + env(safe-area-inset-bottom, 0px));
   right: 16px;
   z-index: 2;
   font-family: 'Bangers', cursive;
