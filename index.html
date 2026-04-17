@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WIECZÓR KAWALERSKI PAWKA!!</title>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+  <meta name="bingbot" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PASSWORD GATE -->
+  <div id="gate" class="gate">
+    <div class="gate-box">
+      <div class="gate-title">🌲 STOP! 🌲</div>
+      <div class="gate-subtitle">KTO IDZIe W LAS?</div>
+      <input
+        id="gate-input"
+        class="gate-input"
+        type="password"
+        placeholder="hasło..."
+        autocomplete="off"
+        autofocus
+      />
+      <button class="gate-btn" onclick="checkPassword()">WCHODZĘ 🍺</button>
+      <div id="gate-error" class="gate-error"></div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <video
+      id="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="assets/video-poster.jpg"
+    >
+      <source src="assets/pawko.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-marquee-wrap">
+      <div class="marquee">🔥 WIECZÓR KAWALERSKI PAWKA!! 🔥 &nbsp;&nbsp;&nbsp; 🌲 LAS NAS WZYWA 🌲 &nbsp;&nbsp;&nbsp; 🍺 PAWKO SIĘ ŻENI 🍺 &nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <button id="sound-btn" class="sound-btn" onclick="toggleSound()">🔇 DŹWIĘK</button>
+
+    <h1 class="title">
+      <span class="blink">★</span>
+      WIECZÓR<br>KAWALERSKI<br><span class="pawka">PAWKA!! <span class="blink">★</span></span>
+    </h1>
+  </header>
+
+  <!-- HYPE SECTION -->
+  <section class="hype">
+    <div class="sticker sticker--fire">🔥</div>
+    <div class="sticker sticker--beer">🍺</div>
+
+    <h2 class="hype-title">WIECZÓR KAWALERSKI<br><em>W LESIE!!</em></h2>
+
+    <div class="hype-text">
+      <p>🌲 Bory, lasy, drzewa, natura. TAK. TO BĘDZIE TO. 🌲</p>
+      <p>Pawko odchodzi wolny jak ptak leśny...  <strong>NA ZAWSZE.</strong></p>
+      <p>Przygotuj się na NIEZAPOMNIANĄ noc pełną przygód, śmiechu, błota i braterstwa.</p>
+      <p class="big-claim">🏕️ SURVIVAL MODE: ON 🏕️</p>
+      <p>Nie ma prądu. Nie ma wifi. Są za to: ognisko, piwo, i Pawko w koronie z gałęzi.</p>
+    </div>
+
+  </section>
+
+  <!-- PHOTO GRID -->
+  <section class="photos">
+    <h2 class="section-title">📸 GALERIA LASU 📸</h2>
+    <p class="section-sub">(i miejsca na Twoje zdjęcia)</p>
+
+    <div class="photo-grid">
+
+      <div class="photo-item photo-item--stock">
+        <img
+          src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80"
+          alt="Las"
+          loading="lazy"
+        />
+        <div class="photo-caption">TU BĘDZIE LAS</div>
+      </div>
+
+      <div class="photo-item">
+        <img src="assets/naturalne_srodowisko.jpg" alt="Pawko w naturze" loading="lazy" />
+        <div class="photo-caption">PAWKO W NATURZE</div>
+      </div>
+
+      <div class="photo-item photo-item--fit">
+        <img src="assets/ekipa.jpg" alt="Ekipa leśna" loading="lazy" />
+        <div class="photo-caption">EKIPA LEŚNA</div>
+      </div>
+
+      <div class="photo-item photo-item--stock">
+        <img
+          src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80"
+          alt="Ognisko w lesie"
+          loading="lazy"
+        />
+        <div class="photo-caption">OGNISKO CHWAŁY</div>
+      </div>
+
+      <div class="photo-item photo-item--stock">
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80"
+          alt="Głęboki las"
+          loading="lazy"
+        />
+        <div class="photo-caption">TU SIĘ ZGUBIMY</div>
+      </div>
+
+      <div class="photo-item">
+        <img src="assets/cokolwiek.jpg" alt="Cokolwiek się wydarzy" loading="lazy" />
+        <div class="photo-caption">COKOLWIEK SIĘ WYDARZY</div>
+      </div>
+
+      <div class="photo-item">
+        <img src="assets/totu_zostaje.jpg" alt="To tu zostaje" loading="lazy" />
+        <div class="photo-caption">TO TU ZOSTAJE</div>
+      </div>
+
+      <div class="photo-item photo-item--stock">
+        <img
+          src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&q=80"
+          alt="Mgła w lesie"
+          loading="lazy"
+        />
+        <div class="photo-caption">KLIMAT GWARANTOWANY</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details">
+    <h2 class="section-title">📋 SZCZEGÓŁY OPERACJI 📋</h2>
+
+    <div class="details-cards">
+      <div class="card card--green">
+        <div class="card-icon">📅</div>
+        <div class="card-label">KIEDY</div>
+        <div class="card-value">17 kwietnia 2026</div>
+      </div>
+      <div class="card card--brown">
+        <div class="card-icon">📍</div>
+        <div class="card-label">GDZIE</div>
+        <div class="card-value">GŁĘBOKO<br><small>W LESIE</small></div>
+      </div>
+      <div class="card card--yellow">
+        <div class="card-icon">👔</div>
+        <div class="card-label">DRESS CODE</div>
+        <div class="card-value">LEŚNY<br><small>MAN</small></div>
+      </div>
+      <div class="card card--red">
+        <div class="card-icon">🍺</div>
+        <div class="card-label">NAPOJE</div>
+        <div class="card-value">TAK<br><small>DUŻO</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-text">💍 PAWKO → ŻONATY 2026 💍</p>
+    <p class="footer-sub">Zrobinone z miłości pączusiu.</p>
+    <div class="marquee-wrap marquee-wrap--footer">
+      <div class="marquee marquee--slow">🌲🍺🔥🌲🍺🔥🌲🍺🔥🌲🍺🔥🌲🍺🔥🌲🍺🔥🌲🍺🔥&nbsp;&nbsp;&nbsp;</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
